@@ -216,6 +216,12 @@
 	.about-section .content-box .info-column:last-child {
 		padding-left: 15px;
 	}
+
+	.bannerproductos-section .welcome-block-one:last-child {
+		margin-top: -35px;
+	}
+
+
 	.services-section .border-box,
 	.about-section .content-box .info-column:first-child:after,
 	.about-section .content-box .info-column:first-child:before {
