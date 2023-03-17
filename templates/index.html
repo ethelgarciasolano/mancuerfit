@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <title>Mancuerfit</title>
 <!-- Stylesheets -->
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
+<link href={{ url_for('static', filename='css/bootstrap.css') }}  rel="stylesheet">
+<link href={{ url_for('static', filename='css/style.css') }} rel="stylesheet">
 <!-- Responsive File -->
-<link href="assets/css/responsive.css" rel="stylesheet">
+<link href={{ url_for('static', filename='css/responsive.css') }}  rel="stylesheet">
 <!-- Color File -->
-<link href="assets/css/color.css" rel="stylesheet">
+<link href={{ url_for('static', filename='css/color.css') }} rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href={{ url_for('static', filename='images/favicon.png') }} type="image/x-icon">
+<link rel="icon" href={{ url_for('static', filename='images/favicon.png') }} type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,7 +48,7 @@
                         <div class="top-left">
                             <!--Logo-->
                             <div class="logo-box">
-                                <div class="logo"><a href="index.html"><img src="assets/images/logo.svg" alt=""></a></div>
+                                <div class="logo"><a href='/'<img src={{ url_for('static', filename='images/logo.svg') }}  alt=""></a></div>
                             </div>
                         </div>
                  <!-- Main Menu -->
@@ -57,12 +57,12 @@
                     <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                         <ul class="navigation clearfix">
                        
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="about.html">Nosotros</a></li>
-                            <li ><a href="productos.html">Productos</a> </li>
-                            <li ><a href="blog.html">Blog</a></li>
+                            <li><a href='/'>Inicio</a></li>
+                            <li><a href="about">Nosotros</a></li>
+                            <li ><a href="productos">Productos</a> </li>
+                            <li ><a href="blog">Blog</a></li>
                             
-                            <li ><a href="contacto.html">Contacto</a></li>
+                            <li ><a href="contacto">Contacto</a></li>
                         
                         </ul>
                         
@@ -82,7 +82,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="index.html" title=""><img src="assets/images/logo3.svg" alt="" title=""></a>
+                    <a href="index.html" title=""><img src={{ url_for('static', filename='images/logo3.svg') }}  alt="" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="pull-right">
@@ -100,7 +100,7 @@
             <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
             
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo.png" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="index.html"><img src={{ url_for('static', filename='images/logo.png') }} alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
 				<!--Social Links-->
 				<div class="social-links">
@@ -120,30 +120,30 @@
     <!--Search Popup-->
     <div id="search-popup" class="search-popup">
         <div class="close-search theme-btn"><span class="flaticon-cancel"></span></div>
-        <div class="popup-inner">
-            <div class="overlay-layer"></div>
-            <div class="search-form">
-                <form method="post" action="index.html">
-                    <div class="form-group">
-                        <fieldset>
-                            <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
-                            <input type="submit" value="Search Now!" class="theme-btn">
-                        </fieldset>
+            <div class="popup-inner">
+                <div class="overlay-layer"></div>
+                    <div class="search-form">
+                        <form method="post" action="index.html">
+                            <div class="form-group">
+                                <fieldset>
+                                    <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                                    <input type="submit" value="Search Now!" class="theme-btn">
+                                </fieldset>
+                            </div>
+                        </form>
+                        <br>
+                        <h3>Recent Search Keywords</h3>
                     </div>
-                </form>
-                <br>
-                <h3>Recent Search Keywords</h3>
-            </div>
             
-        </div>
-    </div>
+                </div>
+            </div>
 
     <!-- Banner Section -->
     <section class="banner-section">
 		<div class="banner-carousel theme_carousel owl-theme owl-carousel" data-options='{"loop": true, "margin": 0, "autoheight":true, "lazyload":true, "nav": true, "dots": true, "autoplay": true, "autoplayTimeout": 6000, "smartSpeed": 300, "responsive":{ "0" :{ "items": "1" }, "768" :{ "items" : "1" } , "1000":{ "items" : "1" }}}'>
 			<!-- Slide Item -->
 			<div class="slide-item">
-				<div class="image-layer lazy-image" data-bg="url('assets/images/main-slider/Page1.svg')"></div>
+				<div class="image-layer lazy-image" data-bg="url('static/images/main-slider/Page1.svg')"></div>
 
 				<div class="auto-container">
 					<div class="content-box">
@@ -157,7 +157,7 @@
 
 			<!-- Slide Item -->
 			<div class="slide-item">
-				<div class="image-layer lazy-image" data-bg="url('assets/images/main-slider/discos.png')"></div>
+				<div class="image-layer lazy-image" data-bg="url('static/images/main-slider/discos.png')"></div>
 
 				<div class="auto-container">
 					<div class="content-box">
@@ -172,7 +172,7 @@
 
 			<!-- Slide Item -->
 			<div class="slide-item">
-				<div class="image-layer lazy-image" data-bg="url('assets/images/main-slider/rusaspesasmancuernas.jpg')"></div>
+				<div class="image-layer lazy-image" data-bg="url('static/images/main-slider/rusaspesasmancuernas.jpg')"></div>
 
 				<div class="auto-container">
 					<div class="content-box">
@@ -196,15 +196,15 @@
                     <!-- Welcome Block One -->
                     <div class="welcome-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                         <div class="inner-box">
-                            <div class="icon-box"><img src="assets/images/icons/2.svg" alt=""></div>
+                            <div class="icon-box"><img src={{ url_for('static', filename='images/icons/2.svg') }} alt=""></div>
                             <h2>Pesas Rusas</h2>
                             <div class="read-more"><a href="#">Ver más</a></div>
                         </div>
                     </div>
                     <!-- Welcome Block One -->
                     <div class="welcome-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                        <div class="inner-box" style="background-image: url(assets/images/resource/mancuernasbarranquilla.png);">
-                            <div class="icon-box"><img src="assets/images/icons/mancuernas.svg" alt=""></div>
+                        <div class="inner-box" style="background-image: url(static/images/resource/mancuernasbarranquilla.png);">
+                            <div class="icon-box"><img src={{ url_for('static', filename='images/icons/mancuernas.svg') }}  alt=""></div>
                             <h2>Mancuernas</h2>
                             <div class="read-more"><a href="#">Ver más</a></div>
                         </div>
@@ -212,7 +212,7 @@
                     <!-- Welcome Block One -->
                     <div class="welcome-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                         <div class="inner-box">
-                            <div class="icon-box"><img src="assets/images/icons/3.svg" alt=""></div>
+                            <div class="icon-box"><img src={{ url_for('static', filename='images/icons/3.svg') }}  alt=""></div>
                             <h2>Discos</h2>
                             <div class="read-more"><a href="#">Ver más</a></div>
                         </div>
@@ -232,7 +232,7 @@
                             <div class="sub-title">Nosotros</div>
                             <h2>Productos amigables con el planeta</h2>
                             <div class="text-center" style="padding-bottom:20px"><h3>Somos una marca ECO-amigable que fabrica sus productos con material 100% reciclable para protejer el medio ambiente. Nuestras líneas se caracterizan por su toque rústico que es símbolo de nuestra conciencia medioambiental y nuestro objetivo de generar una producción más limpia.</h3></div>
-                            <img src="assets/images/resource/SOSTENIBLE.svg" alt=""></div>
+                            <img src={{ url_for('static', filename='images/resource/SOSTENIBLE.svg') }}   alt=""></div>
                         </div>
                                 
                     </div>
@@ -252,23 +252,23 @@
                             <h2>Nuestra Marca</h2>
                         </div>
                         <div class="icon-box wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                            <div class="icon"><img src="assets/images/icons/ecomancuernas.svg" alt=""></div>
+                            <div class="icon"><img src={{ url_for('static', filename='images/icons/ecomancuernas.svg') }}  alt=""></div>
                             <h2>Sostenibilidad</h2>
                             <div class="text">Nuestros productos son producidos con material 100% reciclado. </div>
                         </div>
                         <div class="icon-box wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                            <div class="icon"><img src="assets/images/icons/preciomancuernas.svg" alt=""></div>
+                            <div class="icon"><img src={{ url_for('static', filename='images/icons/preciomancuernas.svg') }}  alt=""></div>
                             <h2>Precio justo</h2>
                             <div class="text">Ofrecemos precios accesibles que te harán pagar menos </div>
                         </div>
                         <div class="icon-box wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                            <div class="icon"><img src="assets/images/icons/comodidadmancuernas.svg" alt=""></div>
+                            <div class="icon"><img src={{ url_for('static', filename='images/icons/comodidadmancuernas.svg') }}  alt=""></div>
                             <h2>Comodidad</h2>
                             <div class="text">Diseños con agarres amplios para garantizar la comodidad y seguridad durante su uso </div>
                         </div>
                     </div>                        
                 </div>
-                <div class="right-column" style="background-image: url(assets/images/resource/stanmancuernas.svg);">
+                <div class="right-column" style="background-image: url(static/images/resource/stanmancuernas.svg);">
                     <!-- Fact Counter -->
         
                    
@@ -303,7 +303,7 @@
                                 <div class="auto-container">
                                     <div class="row">
                                         <div class="col-lg-4">
-                                            <div class="image"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/mancuernasbaq.svg" alt=""></div>
+                                            <div class="image"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }}  data-src={{ url_for('static', filename='images/resource/mancuernasbaq.svg') }}  alt=""></div>
                                         </div>
                                         <div class="col-lg-6" style="margin:auto">
                                      
@@ -317,7 +317,7 @@
                                 <div class="auto-container">
                                     <div class="row">
                                         <div class="col-lg-4">
-                                            <div class="image"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/rusasbarranquilla.svg" alt=""></div>
+                                            <div class="image"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }}  data-src={{ url_for('static', filename='images/resource/rusasbarranquilla.svg') }} alt=""></div>
                                         </div>
                                         <div class="col-lg-6" style="margin:auto">
                                      
@@ -331,7 +331,7 @@
                                 <div class="auto-container">
                                     <div class="row">
                                         <div class="col-lg-4">
-                                            <div class="image"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/discosbaq.svg" alt=""></div>
+                                            <div class="image"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }}  data-src={{ url_for('static', filename='images/resource/discosbaq.svg') }}  alt=""></div>
                                         </div>
                                         <div class="col-lg-6" style="margin:auto">
                                      
@@ -351,7 +351,7 @@
     </section>
 
     <!-- Video Section -->
-    <section class="video-section" style="background-image: url(assets/images/background/mancuernasgym.jpg);">
+    <section class="video-section" style="background-image: url(static/images/background/mancuernasgym.jpg);">
         <div class="auto-container">
             <div class="sec-title light text-center">
                 <div class="sub-title">Intro Video</div>
@@ -367,7 +367,7 @@
     <section class="contact-section">
         <div class="auto-container">
             <div class="row">
-                <div class="col-lg-6" style="background-image: url(assets/images/resource/rusasmancuernaspesas.png);">
+                <div class="col-lg-6" style="background-image: url(static/images/resource/rusasmancuernaspesas.png);">
                  
                 </div>
                 <div class="col-lg-6">
@@ -383,7 +383,7 @@
                         <div class="row">
                             <div class="info-column col-md-6">
                                 <div class="icon-box">
-                                    <div class="icon"><img src="assets/images/icons/correomancuernas.svg" alt=""></span></div>
+                                    <div class="icon"><img src={{ url_for('static', filename='images/icons/correomancuernas.svg') }} alt=""></span></div>
                                     <h3>Correo:</h3>
                                     <ul>
                                         <li><a href="mailto:mancuerfit@gmail.com">mancuerfit@gmail.com</a></li>
@@ -392,7 +392,7 @@
                             </div>
                             <div class="info-column col-md-6">
                                 <div class="icon-box">
-                                    <div class="icon"><img src="assets/images/icons/whatsappmancuernas.svg" alt=""></span></div>
+                                    <div class="icon"><img src={{ url_for('static', filename='images/icons/whatsappmancuernas.svg') }} alt=""></span></div>
                                     <h3>Whatsapp:</h3>
                                     <ul>
                                         <li><a href="https://wa.me/573005205177">+(57) 3005205177</a></li>
@@ -401,7 +401,7 @@
                             </div>
                             <div class="info-column col-md-6">
                                 <div class="icon-box">
-                                    <div class="icon"><img src="assets/images/icons/instagrammancuernas.svg" alt=""></span></div>
+                                    <div class="icon"><img src={{ url_for('static', filename='images/icons/instagrammancuernas.svg') }} alt=""></span></div>
                                     <h3>Instagram:</h3>
                                     <ul>
                                         <li><a href="https://www.instagram.com/mancuerfit/">@mancuerfit</a></li>
@@ -410,7 +410,7 @@
                             </div>
                             <div class="info-column col-md-6">
                                 <div class="icon-box">
-                                    <div class="icon"><img src="assets/images/icons/mancuernasfacebook.svg" alt=""></span></div>
+                                    <div class="icon"><img src={{ url_for('static', filename='images/icons/mancuernasfacebook.svg') }}  alt=""></span></div>
                                     <h3>Facebook:</h3>
                                     <ul>
                                         <li><a href="http://example.com/">example.com</a></li>
@@ -442,9 +442,9 @@
                         	<div class="widget-content">
                               
                                 <ul class="social-links clearfix">
-                                    <li><a href=""><img src="assets/images/icons/facebookmancuernas.svg" alt=""></span></a></li>
-                                    <li><a href="https://wa.me/573005205177"><img src="assets/images/icons/mancuernaswhatsapp.svg" alt=""></span></a></li>
-                                    <li><a href="https://www.instagram.com/mancuerfit/"><img src="assets/images/icons/mancuernasinstagram.svg" alt=""></span></a></li>
+                                    <li><a href=""><img src={{ url_for('static', filename='images/icons/facebookmancuernas.svg') }}  alt=""></span></a></li>
+                                    <li><a href="https://wa.me/573005205177"><img src={{ url_for('static', filename='images/icons/mancuernaswhatsapp.svg') }}  alt=""></span></a></li>
+                                    <li><a href="https://www.instagram.com/mancuerfit/"><img src={{ url_for('static', filename="images/icons/mancuernasinstagram.svg") }}   alt=""></span></a></li>
                                 </ul>
 
 
@@ -454,7 +454,7 @@
                             
 						</div>
                         <div class="center-image">
-                            <img class="lazy-image owl-lazy"  data-src="assets/images/logo.svg" alt="">
+                            <img class="lazy-image owl-lazy"  data-src={{ url_for('static', filename='images/logo.svg') }}  alt="">
                         </div>
 					</div>
 
@@ -476,10 +476,10 @@
                             
                              
                                         <ul>
-                                            <li><a href="index.html">Inicio</a></li>
-                                            <li><a href="about.html">Nosotros</a></li>
-                                            <li><a href="productos.html">Productos</a></li>
-                                            <li><a href="contacto.html">Contacto</a></li>
+                                            <li><a href="/">Inicio</a></li>
+                                            <li><a href="about">Nosotros</a></li>
+                                            <li><a href="productos">Productos</a></li>
+                                            <li><a href="contacto">Contacto</a></li>
                                          
                                         </ul>
                              
@@ -514,19 +514,20 @@
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fal fa-arrow-circle-up"></span></div>
 
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootstrap-select.min.js"></script>
-<script src="assets/js/jquery.fancybox.js"></script>
-<script src="assets/js/isotope.js"></script>
-<script src="assets/js/owl.js"></script>
-<script src="assets/js/appear.js"></script>
-<script src="assets/js/wow.js"></script>
-<script src="assets/js/lazyload.js"></script>
-<script src="assets/js/scrollbar.js"></script>
-<script src="assets/js/TweenMax.min.js"></script>
-<script src="assets/js/script.js"></script>
+
+<script src={{ url_for('static', filename='js/jquery.js') }}></script>
+<script src={{ url_for('static', filename='js/popper.min.js') }}></script>
+<script src={{ url_for('static', filename='js/bootstrap.min.js') }}></script>
+<script src={{ url_for('static', filename='js/bootstrap-select.min.js') }}></script>
+<script src={{ url_for('static', filename='js/jquery.fancybox.js') }}></script>
+<script src={{ url_for('static', filename='js/isotope.js') }}></script>
+<script src={{ url_for('static', filename='js/owl.js') }}></script>
+<script src={{ url_for('static', filename='js/appear.js') }}></script>
+<script src={{ url_for('static', filename='js/wow.js') }}></script>
+<script src={{ url_for('static', filename='js/lazyload.js') }}></script>
+<script src={{ url_for('static', filename='js/scrollbar.js') }}></script>
+<script src={{ url_for('static', filename='js/weenMax.min.js') }}></script>
+<script src={{ url_for('static', filename='js/script.js') }}></script>
 
 </body>
 </html>

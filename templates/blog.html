@@ -4,17 +4,17 @@
 <meta charset="utf-8">
 <title>Mancuerfit</title>
 <!-- Stylesheets -->
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
+<link href={{ url_for('static', filename='css/bootstrap.css') }}  rel="stylesheet">
+<link href={{ url_for('static', filename='css/style.css') }} rel="stylesheet">
 <!-- Responsive File -->
-<link href="assets/css/responsive.css" rel="stylesheet">
+<link href={{ url_for('static', filename='css/responsive.css') }}  rel="stylesheet">
 <!-- Color File -->
-<link href="assets/css/color.css" rel="stylesheet">
+<link href={{ url_for('static', filename='css/color.css') }} rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href={{ url_for('static', filename='images/favicon.png') }} type="image/x-icon">
+<link rel="icon" href={{ url_for('static', filename='images/favicon.png') }} type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -48,22 +48,21 @@
                         <div class="top-left">
                             <!--Logo-->
                             <div class="logo-box">
-                                <div class="logo"><a href="index.html"><img src="assets/images/logo3.svg" alt=""></a></div>
+                                <div class="logo"><a href='/'><img src={{ url_for('static', filename='images/logo.svg') }}  alt=""></a></div>
                             </div>
                         </div>
-
                  <!-- Main Menu -->
                  <nav class="main-menu navbar-expand-md navbar-light">
                             
                     <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                         <ul class="navigation clearfix">
                        
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="about.html">Nosotros</a></li>
-                            <li ><a href="productos.html">Productos</a> </li>
-                            <li ><a href="blog.html">Blog</a></li>
+                            <li><a href='/'>Inicio</a></li>
+                            <li><a href="about">Nosotros</a></li>
+                            <li ><a href="productos">Productos</a> </li>
+                            <li ><a href="blog">Blog</a></li>
                             
-                            <li ><a href="contacto.html">Contacto</a></li>
+                            <li ><a href="contacto">Contacto</a></li>
                         
                         </ul>
                         
@@ -83,7 +82,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="index.html" title=""><img src="assets/images/logo3.svg" alt="" title=""></a>
+                    <a href="index.html" title=""><img src={{ url_for('static', filename='images/logo3.svg') }}  alt="" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="pull-right">
@@ -101,7 +100,7 @@
             <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
             
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo.png" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="index.html"><img src={{ url_for('static', filename='images/logo.png') }} alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
 				<!--Social Links-->
 				<div class="social-links">
@@ -121,24 +120,23 @@
     <!--Search Popup-->
     <div id="search-popup" class="search-popup">
         <div class="close-search theme-btn"><span class="flaticon-cancel"></span></div>
-        <div class="popup-inner">
-            <div class="overlay-layer"></div>
-            <div class="search-form">
-                <form method="post" action="index.html">
-                    <div class="form-group">
-                        <fieldset>
-                            <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
-                            <input type="submit" value="Search Now!" class="theme-btn">
-                        </fieldset>
+            <div class="popup-inner">
+                <div class="overlay-layer"></div>
+                    <div class="search-form">
+                        <form method="post" action="index.html">
+                            <div class="form-group">
+                                <fieldset>
+                                    <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                                    <input type="submit" value="Search Now!" class="theme-btn">
+                                </fieldset>
+                            </div>
+                        </form>
+                        <br>
+                        <h3>Recent Search Keywords</h3>
                     </div>
-                </form>
-                <br>
-                <h3>Recent Search Keywords</h3>
-            </div>
             
-        </div>
-    </div>
-
+                </div>
+            </div>
     
     <!-- News Section -->
     <section class="news-section">
@@ -152,7 +150,7 @@
                 <!-- News Block One -->
                 <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/mancuernas1.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }} data-src={{ url_for('static', filename='/images/resource/mancuernas1.jpg') }}  alt=""></a></div>
                         <div class="lower-content">
                             <div class="category">Mancuernas</div>
                             <ul class="post-meta">
@@ -167,7 +165,7 @@
                 <!-- News Block One -->
                 <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/mancuernas2.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }} data-src={{ url_for('static', filename='/images/resource/mancuernas2.jpg') }} alt=""></a></div>
                         <div class="lower-content">
                             <div class="category">Mancuernas</div>
                             <ul class="post-meta">
@@ -182,7 +180,7 @@
                 <!-- News Block One -->
                 <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/mancuernas3.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }} data-src={{ url_for('static', filename='/images/resource/mancuernas3.jpg') }} alt=""></a></div>
                         <div class="lower-content">
                             <div class="category">Mancuernas</div>
                             <ul class="post-meta">
@@ -199,7 +197,7 @@
                 <!-- News Block One -->
                 <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/mancuernas4.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }} data-src={{ url_for('static', filename='/images/resource/mancuernas4.jpg') }}  alt=""></a></div>
                         <div class="lower-content">
                             <div class="category">Mancuernas</div>
                             <ul class="post-meta">
@@ -214,7 +212,7 @@
                 <!-- News Block One -->
                 <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/mancuernas5.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }} data-src={{ url_for('static', filename='/images/resource/mancuernas5.jpg') }} alt=""></a></div>
                         <div class="lower-content">
                             <div class="category">Mancuernas</div>
                             <ul class="post-meta">
@@ -229,7 +227,7 @@
                 <!-- News Block One -->
                 <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/pesasrusas1.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }} data-src={{ url_for('static', filename='images/resource/pesasrusas1.jpg') }}  alt=""></a></div>
                         <div class="lower-content">
                             <div class="category">Pesas Rusas</div>
                             <ul class="post-meta">
@@ -246,7 +244,7 @@
                 <!-- News Block One -->
                 <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/pesasrusas2.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }}  data-src={{ url_for('static', filename='images/resource/pesasrusas2.jpg') }}   alt=""></a></div>
                         <div class="lower-content">
                             <div class="category">Pesas Rusas</div>
                             <ul class="post-meta">
@@ -261,7 +259,7 @@
                 <!-- News Block One -->
                 <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/pesasrusas3.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }} data-src={{ url_for('static', filename='images/resource/pesasrusas3.jpg') }}   alt=""></a></div>
                         <div class="lower-content">
                             <div class="category">Pesas Rusas</div>
                             <ul class="post-meta">
@@ -276,7 +274,7 @@
                 <!-- News Block One -->
                 <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/pesasrusas4.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }} data-src={{ url_for('static', filename='images/resource/pesasrusas4.jpg') }}   alt=""></a></div>
                         <div class="lower-content">
                             <div class="category">Pesas Rusas</div>
                             <ul class="post-meta">
@@ -293,7 +291,7 @@
                 <!-- News Block One -->
                 <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/pesasrusas5.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }} data-src={{ url_for('static', filename='images/resource/pesasrusas5.jpg') }}    alt=""></a></div>
                         <div class="lower-content">
                             <div class="category">Pesas Rusas</div>
                             <ul class="post-meta">
@@ -308,7 +306,7 @@
                 <!-- News Block One -->
                 <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/pesasrusas6.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }}  data-src={{ url_for('static', filename='images/resource/pesasrusas6.jpg') }}    alt=""></a></div>
                         <div class="lower-content">
                             <div class="category">Pesas Rusas</div>
                             <ul class="post-meta">
@@ -323,7 +321,7 @@
                 <!-- News Block One -->
                 <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/discosgym1.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }} data-src={{ url_for('static', filename='images/resource/discosgym1.jpg') }}  alt=""></a></div>
                         <div class="lower-content">
                             <div class="category">Discos Gymnasio</div>
                             <ul class="post-meta">
@@ -340,7 +338,7 @@
                 <!-- News Block One -->
                 <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/discosgym2.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }} data-src={{ url_for('static', filename='images/resource/discosgym2.jpg') }} alt=""></a></div>
                         <div class="lower-content">
                             <div class="category">Discos Gymnasio</div>
                             <ul class="post-meta">
@@ -355,7 +353,7 @@
                 <!-- News Block One -->
                 <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/discosgym3.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }} data-src={{ url_for('static', filename='images/resource/discosgym3.jpg') }} alt=""></a></div>
                         <div class="lower-content">
                             <div class="category">Discos Gymnasio</div>
                             <ul class="post-meta">
@@ -370,7 +368,7 @@
                 <!-- News Block One -->
                 <div class="news-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/resource/discosgymnasio1.jpg" alt=""></a></div>
+                        <div class="image"><a href="#"><img class="lazy-image owl-lazy" src={{ url_for('static', filename='images/resource/image-spacer-for-validation.png') }}  data-src={{ url_for('static', filename='images/resource/discosgymnasio1.jpg') }} alt=""></a></div>
                         <div class="lower-content">
                             <div class="category">Discos Gymnasio</div>
                             <ul class="post-meta">
@@ -388,6 +386,8 @@
 
 
     
+    
+    
 	<!-- Main Footer -->
     <footer class="main-footer">
     	<div class="auto-container">
@@ -399,95 +399,57 @@
                     <div class="column col-lg-4">
 						<div class="footer-widget logo-widget">
                         	<div class="widget-content">
-                                <div class="footer-logo">
-                                    <a href="index.html"><img class="lazy-image" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/footer-logo.png" alt="" /></a>
-                                </div>
-                                <div class="text">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</div>
+                              
                                 <ul class="social-links clearfix">
-                                    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-twitter"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-vimeo-v"></span></a></li>
-                                    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+                                    <li><a href=""><img src={{ url_for('static', filename='images/icons/facebookmancuernas.svg') }}  alt=""></span></a></li>
+                                    <li><a href="https://wa.me/573005205177"><img src={{ url_for('static', filename='images/icons/mancuernaswhatsapp.svg') }}  alt=""></span></a></li>
+                                    <li><a href="https://www.instagram.com/mancuerfit/"><img src={{ url_for('static', filename="images/icons/mancuernasinstagram.svg") }}   alt=""></span></a></li>
                                 </ul>
+
+
                             </div>
+
+                        
+                            
+						</div>
+                        <div class="center-image">
+                            <img class="lazy-image owl-lazy"  data-src={{ url_for('static', filename='images/logo.svg') }}  alt="">
+                        </div>
+					</div>
+
+                    <div class="column col-lg-4">
+						<div class="footer-widget instagram-widget text-center">
+                            <h3>Ubicación</h3>
+							<div class="inner-box">
+                                    <p>Barranquilla, Colombia</p>
+                           
+                            </div>	
 						</div>
 					</div>
 					
 					<!--Column-->
                     <div class="column col-lg-4">
-						<div class="footer-widget links-widget">
+						<div class="footer-widget links-widget text-center">
 							<div class="widget-content">
 								<h3>Links</h3>
-                                <div class="row">
-                                    <div class="col-md-6">
+                            
+                             
                                         <ul>
-                                            <li><a href="#">Home</a></li>
-                                            <li><a href="#">About</a></li>
-                                            <li><a href="#">Services</a></li>
-                                            <li><a href="#">Portfolio</a></li>
-                                            <li><a href="#">Pricing</a></li>
-                                            <li><a href="#">Contact</a></li>
+                                            <li><a href="/">Inicio</a></li>
+                                            <li><a href="about">Nosotros</a></li>
+                                            <li><a href="productos">Productos</a></li>
+                                            <li><a href="contacto">Contacto</a></li>
+                                         
                                         </ul>
-                                    </div>
-                                    <div class="col-md-6">
-                                        <ul>
-                                            <li><a href="#">News</a></li>
-                                            <li><a href="#">Press Release</a></li>
-                                            <li><a href="#">Case Study</a></li>
-                                            <li><a href="#">Terms</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                             
+                                
+                           
 							</div>	
 						</div>
 					</div>
 					
 					<!--Column-->
-                    <div class="column col-lg-4">
-						<div class="footer-widget instagram-widget">
-                            <h3>Photo Showcase</h3>
-							<div class="inner-box">
-                                <div class="wrapper-box">
-                                    <div class="image">
-                                        <img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/gallery/gallery-1.jpg" alt="">
-                                        <div class="overlay-link"><a href="assets/images/gallery/gallery-1.jpg" class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></a></div>
-                                    </div>
-                                    <div class="image">
-                                        <img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/gallery/gallery-2.jpg" alt="">
-                                        <div class="overlay-link"><a href="assets/images/gallery/gallery-2.jpg" class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></a></div>
-                                    </div>
-                                    <div class="image">
-                                        <img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/gallery/gallery-3.jpg" alt="">
-                                        <div class="overlay-link"><a href="assets/images/gallery/gallery-3.jpg" class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></a></div>
-                                    </div>
-                                    <div class="image">
-                                        <img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/gallery/gallery-4.jpg" alt="">
-                                        <div class="overlay-link"><a href="assets/images/gallery/gallery-4.jpg" class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></a></div>
-                                    </div>
-                                    <div class="image">
-                                        <img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/gallery/gallery-5.jpg" alt="">
-                                        <div class="overlay-link"><a href="assets/images/gallery/gallery-5.jpg" class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></a></div>
-                                    </div>
-                                    <div class="image">
-                                        <img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/gallery/gallery-6.jpg" alt="">
-                                        <div class="overlay-link"><a href="assets/images/gallery/gallery-6.jpg" class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></a></div>
-                                    </div>
-                                    <div class="image">
-                                        <img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/gallery/gallery-7.jpg" alt="">
-                                        <div class="overlay-link"><a href="assets/images/gallery/gallery-7.jpg" class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></a></div>
-                                    </div>
-                                    <div class="image">
-                                        <img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/gallery/gallery-8.jpg" alt="">
-                                        <div class="overlay-link"><a href="assets/images/gallery/gallery-8.jpg" class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></a></div>
-                                    </div>
-                                    <div class="image">
-                                        <img class="lazy-image owl-lazy" src="assets/images/resource/image-spacer-for-validation.png" data-src="assets/images/gallery/gallery-9.jpg" alt="">
-                                        <div class="overlay-link"><a href="assets/images/gallery/gallery-9.jpg" class="lightbox-image" data-fancybox="gallery"><span class="fa fa-plus"></span></a></div>
-                                    </div>
-                                </div><!-- /.gallery-wrapper -->
-                            </div>	
-						</div>
-					</div>
+         
 					
 				</div>
                 
@@ -497,7 +459,10 @@
 		<!-- Footer Bottom -->
 		<div class="auto-container">				
             <div class="footer-bottom">
-            	<div class="copyright">Copyright By<a href="#">Template_path</a> - 2020</div>
+          
+            	<div class="copyright">Copyright @<a href="#">Mancuerfit Barranquilla</a> - 2023</div>
+                <div class="copyright">Powered @<a href="www.nlanub.com">Nlanub</a> - 2023</div>
+          
 			</div>
 		</div>
 	</footer>
@@ -508,19 +473,20 @@
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fal fa-arrow-circle-up"></span></div>
 
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootstrap-select.min.js"></script>
-<script src="assets/js/jquery.fancybox.js"></script>
-<script src="assets/js/isotope.js"></script>
-<script src="assets/js/owl.js"></script>
-<script src="assets/js/appear.js"></script>
-<script src="assets/js/wow.js"></script>
-<script src="assets/js/lazyload.js"></script>
-<script src="assets/js/scrollbar.js"></script>
-<script src="assets/js/TweenMax.min.js"></script>
-<script src="assets/js/script.js"></script>
+
+<script src={{ url_for('static', filename='js/jquery.js') }}></script>
+<script src={{ url_for('static', filename='js/popper.min.js') }}></script>
+<script src={{ url_for('static', filename='js/bootstrap.min.js') }}></script>
+<script src={{ url_for('static', filename='js/bootstrap-select.min.js') }}></script>
+<script src={{ url_for('static', filename='js/jquery.fancybox.js') }}></script>
+<script src={{ url_for('static', filename='js/isotope.js') }}></script>
+<script src={{ url_for('static', filename='js/owl.js') }}></script>
+<script src={{ url_for('static', filename='js/appear.js') }}></script>
+<script src={{ url_for('static', filename='js/wow.js') }}></script>
+<script src={{ url_for('static', filename='js/lazyload.js') }}></script>
+<script src={{ url_for('static', filename='js/scrollbar.js') }}></script>
+<script src={{ url_for('static', filename='js/weenMax.min.js') }}></script>
+<script src={{ url_for('static', filename='js/script.js') }}></script>
 
 </body>
 </html>

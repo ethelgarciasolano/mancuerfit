@@ -4,18 +4,17 @@
 <meta charset="utf-8">
 <title>Mancuerfit</title>
 <!-- Stylesheets -->
-<link href="assets/css/bootstrap.css" rel="stylesheet">
-<link href="assets/css/style.css" rel="stylesheet">
+<link href={{ url_for('static', filename='css/bootstrap.css') }}  rel="stylesheet">
+<link href={{ url_for('static', filename='css/style.css') }} rel="stylesheet">
 <!-- Responsive File -->
-<link href="assets/css/responsive.css" rel="stylesheet">
-<link href="assets/css/nicepage.css" rel="stylesheet">
+<link href={{ url_for('static', filename='css/responsive.css') }}  rel="stylesheet">
 <!-- Color File -->
-<link href="assets/css/color.css" rel="stylesheet">
+<link href={{ url_for('static', filename='css/color.css') }} rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
 
-<link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-<link rel="icon" href="assets/images/favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href={{ url_for('static', filename='images/favicon.png') }} type="image/x-icon">
+<link rel="icon" href={{ url_for('static', filename='images/favicon.png') }} type="image/x-icon">
 
 <!-- Responsive -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,22 +48,21 @@
                         <div class="top-left">
                             <!--Logo-->
                             <div class="logo-box">
-                                <div class="logo"><a href="index.html"><img src="assets/images/logo3.svg" alt=""></a></div>
+                                <div class="logo"><a href='/'><img src={{ url_for('static', filename='images/logo.svg') }}  alt=""></a></div>
                             </div>
                         </div>
-
                  <!-- Main Menu -->
                  <nav class="main-menu navbar-expand-md navbar-light">
                             
                     <div class="collapse navbar-collapse show clearfix" id="navbarSupportedContent">
                         <ul class="navigation clearfix">
                        
-                            <li><a href="index.html">Inicio</a></li>
-                            <li><a href="about.html">Nosotros</a></li>
-                            <li ><a href="productos.html">Productos</a> </li>
-                            <li ><a href="blog.html">Blog</a></li>
+                            <li><a href='/'>Inicio</a></li>
+                            <li><a href="about">Nosotros</a></li>
+                            <li ><a href="productos">Productos</a> </li>
+                            <li ><a href="blog">Blog</a></li>
                             
-                            <li ><a href="contacto.html">Contacto</a></li>
+                            <li ><a href="contacto">Contacto</a></li>
                         
                         </ul>
                         
@@ -84,7 +82,7 @@
             <div class="auto-container clearfix">
                 <!--Logo-->
                 <div class="logo pull-left">
-                    <a href="index.html" title=""><img src="assets/images/logo3.svg" alt="" title=""></a>
+                    <a href="index.html" title=""><img src={{ url_for('static', filename='images/logo3.svg') }}  alt="" title=""></a>
                 </div>
                 <!--Right Col-->
                 <div class="pull-right">
@@ -102,7 +100,7 @@
             <div class="close-btn"><span class="icon flaticon-cancel"></span></div>
             
             <nav class="menu-box">
-                <div class="nav-logo"><a href="index.html"><img src="assets/images/logo.png" alt="" title=""></a></div>
+                <div class="nav-logo"><a href="index.html"><img src={{ url_for('static', filename='images/logo.png') }} alt="" title=""></a></div>
                 <div class="menu-outer"><!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header--></div>
 				<!--Social Links-->
 				<div class="social-links">
@@ -122,29 +120,28 @@
     <!--Search Popup-->
     <div id="search-popup" class="search-popup">
         <div class="close-search theme-btn"><span class="flaticon-cancel"></span></div>
-        <div class="popup-inner">
-            <div class="overlay-layer"></div>
-            <div class="search-form">
-                <form method="post" action="index.html">
-                    <div class="form-group">
-                        <fieldset>
-                            <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
-                            <input type="submit" value="Search Now!" class="theme-btn">
-                        </fieldset>
+            <div class="popup-inner">
+                <div class="overlay-layer"></div>
+                    <div class="search-form">
+                        <form method="post" action="index.html">
+                            <div class="form-group">
+                                <fieldset>
+                                    <input type="search" class="form-control" name="search-input" value="" placeholder="Search Here" required >
+                                    <input type="submit" value="Search Now!" class="theme-btn">
+                                </fieldset>
+                            </div>
+                        </form>
+                        <br>
+                        <h3>Recent Search Keywords</h3>
                     </div>
-                </form>
-                <br>
-                <h3>Recent Search Keywords</h3>
-            </div>
             
-        </div>
-    </div>
-
+                </div>
+            </div>
 
     
     <!-- News Section -->
     <section class="bannerproductos-section">
-        <div class="sec-bg" style="background-image: url(assets/images/background/image-4.jpg);"></div>
+        <div class="sec-bg" style="background-image: url(images/background/image-4.jpg);"></div>
         <div class="auto-container">
             <div class="sec-title text-center light">
                 <div class="sub-title">Productos</div>
@@ -154,15 +151,15 @@
                 <!-- Welcome Block One -->
                 <div class="welcome-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="icon-box"><img src="assets/images/icons/2.svg" alt=""></div>
+                        <div class="icon-box"><img src={{ url_for('static', filename='images/icons/2.svg')}}  alt=""></div>
                         <h2>Pesas Rusas</h2>
                         <div class="read-more"><a href="#">Ver más</a></div>
                     </div>
                 </div>
                 <!-- Welcome Block One -->
                 <div class="welcome-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
-                    <div class="inner-box" style="background-image: url(assets/images/resource/mancuernasbarranquilla.png);">
-                        <div class="icon-box"><img src="assets/images/icons/mancuernas.svg" alt=""></div>
+                    <div class="inner-box" style="background-image: url(static/images/resource/mancuernasbarranquilla.png);">
+                        <div class="icon-box"><img src={{ url_for('static', filename='images/icons/mancuernas.svg')}}  alt=""></div>
                         <h2>Mancuernas</h2>
                         <div class="read-more"><a href="#">Ver más</a></div>
                     </div>
@@ -170,7 +167,7 @@
                 <!-- Welcome Block One -->
                 <div class="welcome-block-one col-lg-4 wow fadeInUp" data-wow-delay="200ms" data-wow-duration="1200ms">
                     <div class="inner-box">
-                        <div class="icon-box"><img src="assets/images/icons/3.svg" alt=""></div>
+                        <div class="icon-box"><img src={{ url_for('static', filename='images/icons/3.svg')}}  alt=""></div>
                         <h2>Discos</h2>
                         <div class="read-more"><a href="#">Ver más</a></div>
                     </div>
@@ -202,7 +199,7 @@
                         </div>                        
                     </div>
                     <div class="right-columnA text-center">
-                        <img class="image" src="assets/images/resource/mancuernaGrande.svg"alt="">
+                        <img class="image" src={{ url_for('static', filename='images/resource/mancuernaGrande.svg')}} alt="">
                         <!-- Fact Counter --> 
                     </div>
                 </div>
@@ -217,7 +214,7 @@
                     <div class="auto-container">
                         <div class="wrapper-box">
                             <div class="right-columnB text-center">
-                                <img class="image" src="assets/images/resource/mancuernasmax.svg"alt="">
+                                <img class="image" src={{ url_for('static', filename='images/resource/mancuernasmax.svg') }} alt="">
                                 <!-- Fact Counter --> 
                             </div>
                             <div class="left-columnB">
@@ -263,7 +260,7 @@
                             </div>                       
                             </div>
                             <div class="right-columnA text-center">
-                                <img class="image" src="assets/images/resource/pesasrusasGrande.svg"alt="">
+                                <img class="image" src={{ url_for('static', filename='images/resource/pesasrusasGrande.svg') }} alt="">
                                 <!-- Fact Counter --> 
                             </div>
                         </div>
@@ -281,7 +278,7 @@
                     <div class="auto-container" style="padding-bottom:90px">
                         <div class="wrapper-box" style="padding-bottom:90px">
                             <div class="right-columnB text-center" >
-                                <img class="image" src="assets/images/resource/discosgymGrandes.svg"alt="">
+                                <img class="image" src={{ url_for('static', filename='images/discosgymGrandes.svg') }} alt="">
                                 <!-- Fact Counter --> 
                             </div>
                             <div class="left-columnB">
@@ -306,6 +303,7 @@
     
 
     
+    
 	<!-- Main Footer -->
     <footer class="main-footer">
     	<div class="auto-container">
@@ -319,9 +317,9 @@
                         	<div class="widget-content">
                               
                                 <ul class="social-links clearfix">
-                                    <li><a href=""><img src="assets/images/icons/facebookmancuernas.svg" alt=""></span></a></li>
-                                    <li><a href="https://wa.me/573005205177"><img src="assets/images/icons/mancuernaswhatsapp.svg" alt=""></span></a></li>
-                                    <li><a href="https://www.instagram.com/mancuerfit/"><img src="assets/images/icons/mancuernasinstagram.svg" alt=""></span></a></li>
+                                    <li><a href=""><img src={{ url_for('static', filename='images/icons/facebookmancuernas.svg') }}  alt=""></span></a></li>
+                                    <li><a href="https://wa.me/573005205177"><img src={{ url_for('static', filename='images/icons/mancuernaswhatsapp.svg') }}  alt=""></span></a></li>
+                                    <li><a href="https://www.instagram.com/mancuerfit/"><img src={{ url_for('static', filename="images/icons/mancuernasinstagram.svg") }}   alt=""></span></a></li>
                                 </ul>
 
 
@@ -331,7 +329,7 @@
                             
 						</div>
                         <div class="center-image">
-                            <img class="lazy-image owl-lazy"  data-src="assets/images/logo.svg" alt="">
+                            <img class="lazy-image owl-lazy"  data-src={{ url_for('static', filename='images/logo.svg') }}  alt="">
                         </div>
 					</div>
 
@@ -353,10 +351,10 @@
                             
                              
                                         <ul>
-                                            <li><a href="index.html">Inicio</a></li>
-                                            <li><a href="about.html">Nosotros</a></li>
-                                            <li><a href="productos.html">Productos</a></li>
-                                            <li><a href="contacto.html">Contacto</a></li>
+                                            <li><a href="/">Inicio</a></li>
+                                            <li><a href="about">Nosotros</a></li>
+                                            <li><a href="productos">Productos</a></li>
+                                            <li><a href="contacto">Contacto</a></li>
                                          
                                         </ul>
                              
@@ -391,19 +389,20 @@
 <!--Scroll to top-->
 <div class="scroll-to-top scroll-to-target" data-target="html"><span class="fal fa-arrow-circle-up"></span></div>
 
-<script src="assets/js/jquery.js"></script>
-<script src="assets/js/popper.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/bootstrap-select.min.js"></script>
-<script src="assets/js/jquery.fancybox.js"></script>
-<script src="assets/js/isotope.js"></script>
-<script src="assets/js/owl.js"></script>
-<script src="assets/js/appear.js"></script>
-<script src="assets/js/wow.js"></script>
-<script src="assets/js/lazyload.js"></script>
-<script src="assets/js/scrollbar.js"></script>
-<script src="assets/js/TweenMax.min.js"></script>
-<script src="assets/js/script.js"></script>
+
+<script src={{ url_for('static', filename='js/jquery.js') }}></script>
+<script src={{ url_for('static', filename='js/popper.min.js') }}></script>
+<script src={{ url_for('static', filename='js/bootstrap.min.js') }}></script>
+<script src={{ url_for('static', filename='js/bootstrap-select.min.js') }}></script>
+<script src={{ url_for('static', filename='js/jquery.fancybox.js') }}></script>
+<script src={{ url_for('static', filename='js/isotope.js') }}></script>
+<script src={{ url_for('static', filename='js/owl.js') }}></script>
+<script src={{ url_for('static', filename='js/appear.js') }}></script>
+<script src={{ url_for('static', filename='js/wow.js') }}></script>
+<script src={{ url_for('static', filename='js/lazyload.js') }}></script>
+<script src={{ url_for('static', filename='js/scrollbar.js') }}></script>
+<script src={{ url_for('static', filename='js/weenMax.min.js') }}></script>
+<script src={{ url_for('static', filename='js/script.js') }}></script>
 
 </body>
 </html>
