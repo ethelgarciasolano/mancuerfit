@@ -32,10 +32,19 @@
 		width: 100%;
 	
 		padding-top: 50px;
+		padding-left: 4px;
+		padding-right: 4px;
 
+	}
+	.productA-section .icon-box {
+		margin-left: 10px;
+		margin-right: 10px;
+		margin-bottom: 20px;
+		color: white;
 	}
 	.bannerproductos-section{
 		padding-top: 150px;
+		padding-bottom: 0px;
 	}
 	.sec-titleB h2 {
 		font-size: 60px;
