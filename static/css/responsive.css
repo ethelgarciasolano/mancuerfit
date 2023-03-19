@@ -154,6 +154,8 @@
 	.about-section .content-box {
 		margin-left: 20px;
 		margin-right: 20px;
+		font-size: 20px;
+
 	}
 	.main-footer .links-widget .widget-content {
 		padding-left: 0;
@@ -166,6 +168,8 @@
 	}
 	.about-section-three .sec-title {
 	    text-align: left !important;
+		
+
 	}
 	.service-block-one .inner-box {
 		max-width: 500px;
@@ -199,6 +203,8 @@
 	}
 	.services-section{
 		text-align: center;
+		padding-left: 7px;
+		padding-right: 4px;
 	}
 	.banner-section{
 		text-align: center;
