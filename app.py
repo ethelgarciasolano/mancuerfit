@@ -27,84 +27,84 @@ def productos():
 def blog():
     return render_template( 'blog.html')
 
-@app.route('/articulo1')
-def articulo1():
+@app.route('/tamanomancuerna')
+def tamanomancuerna():
     return render_template( 'articulo1.html')
 
-@app.route('/articulo2')
-def articulo2():
+@app.route('/costomancuerna')
+def costomancuerna():
     return render_template('articulo2.html')
 
-@app.route('/articulo3')
-def articulo3():
+@app.route('/beneficiosmancuernas')
+def beneficiosmancuernas():
     return render_template( 'articulo3.html')
 
-@app.route('/articulo4')
-def articulo4():
-    return render_template( 'articulo4.html')
+@app.route('/cuidadomancuernas')
+def cuidadomancuernas():
+    return render_template( 'cuidadomancuernas.html')
 
-@app.route('/articulo5')
-def articulo5():
+@app.route('/ejerciciosmancuernas')
+def ejerciciosmancuernas():
     return render_template( 'articulo5.html')
 
-@app.route('/articulo6')
-def marticulo6():
+@app.route('/pesasrusas')
+def pesasrusas():
     return render_template( 'articulo6.html')
 
-@app.route('/articulo7')
-def articulo7():
+@app.route('/pesopesasrusas')
+def pesopesasrusas():
     return render_template( 'articulo7.html')
 
-@app.route('/articulo8')
-def articulo8():
+@app.route('/beneficiospesasrusas')
+def beneficiospesasrusas():
     return render_template( 'articulo8.html')
 
-@app.route('/articulo9')
-def articulo9():
+@app.route('/ejericiospesasrusas')
+def ejericiospesasrusas():
     return render_template( 'articulo9.html')
 
-@app.route('/articulo10')
-def articulo10():
+@app.route('/cuidadopesasrusas')
+def cuidadopesasrusas():
     return render_template( 'articulo10.html')
 
-@app.route('/articulo11')
-def articulo11():
+@app.route('/pesodepesasrusas')
+def pesodepesasrusas():
     return render_template( 'articulo11.html')
 
-@app.route('/articulo12')
-def articulo12():
+@app.route('/discosgimnasio')
+def discosgimnasio():
     return render_template( 'articulo12.html')
 
-@app.route('/articulo13')
-def articulo13():
+@app.route('/discoshierro')
+def discoshierro():
     return render_template( 'articulo13.html')
 
-@app.route('/articulo14')
-def articulo14():
+@app.route('/pesodiscos')
+def pesodiscos():
     return render_template( 'articulo14.html')
 
-@app.route('/articulo15')
-def articulo15():
+@app.route('/discosbarra')
+def discosbarra():
     return render_template( 'articulo15.html')
 
-@app.route('/articulo16')
-def articulo16():
+@app.route('/usarmancuernas')
+def usarmancuernas():
     return render_template( 'articulo16.html')
 
-@app.route('/articulo17')
-def articulo17():
+@app.route('/materialesmancuernas')
+def materialesmancuernas():
     return render_template( 'articulo17.html')
 
-@app.route('/articulo18')
-def articulo18():
+@app.route('/mancuernasajustables')
+def mancuernasajustables():
     return render_template( 'articulo18.html')
 
-@app.route('/articulo19')
-def articulo19():
+@app.route('/pesasbarranquilla')
+def pesasbarranquilla():
     return render_template( 'articulo19.html')
 
-@app.route('/articulo20')
-def articulo20():
+@app.route('/mancuernasbaratas')
+def mancuernasbaratas():
     return render_template( 'articulo20.html')
 
 if __name__ == '__main__':
