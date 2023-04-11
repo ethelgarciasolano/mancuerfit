@@ -1,30 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<title>Mancuerfit</title>
-<!-- Stylesheets -->
-<link href={{ url_for('static', filename='css/bootstrap.css') }}  rel="stylesheet">
-<link href={{ url_for('static', filename='css/style.css') }} rel="stylesheet">
-<!-- Responsive File -->
-<link href={{ url_for('static', filename='css/responsive.css') }}  rel="stylesheet">
-<!-- Color File -->
-<link href={{ url_for('static', filename='css/color.css') }} rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+{% extends "header.html" %}
 
-<link rel="shortcut icon" href={{ url_for('static', filename='images/favicon.png') }} type="image/x-icon">
-<link rel="icon" href={{ url_for('static', filename='images/favicon.png') }} type="image/x-icon">
-
-<!-- Responsive -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-<!--[if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script><![endif]-->
-<!--[if lt IE 9]><script src="js/respond.js"></script><![endif]-->
-</head>
-
-<body>
-
+{% block articulo1%} 
 <div class="page-wrapper">
     <!-- Preloader http://preview.themeforest.net/item/finandox-react-business-consulting-template/full_screen_preview/27022161?_ga=2.79485268.1350930259.1678638952-1556967069.1678638952&_gac=1.249926900.1678639074.Cj0KCQiAjbagBhD3ARIsANRrqEscSS4tP2cdRsixYeJQqtLH0gHGiRWwaOTDon5B7w48hF8NpI3VHKMaAp8_EALw_wcB --> 
     <div class="loader-wrap">
@@ -143,7 +120,7 @@
         <div class="auto-container">
             <div class="sec-title text-center light">
                 <div class="sub-title">blog</div>
-                <h2>¿Qué tamaño de mancuernas debo usar?</h2>
+                <h1>¿Qué tamaño de mancuernas debo usar?</h1>
             </div>
 
         </div>
@@ -275,3 +252,4 @@
 
 </body>
 </html>
+{% endblock %}

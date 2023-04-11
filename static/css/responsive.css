@@ -53,6 +53,16 @@
 		font-size: 60px;
 	}
 
+	.sec-titleB h1 {
+		font-size: 60px;
+		letter-spacing: 2px;
+	}
+
+	.sec-titleA h1 {
+		font-size: 60px;
+		letter-spacing: 2px;
+	}
+
 	.productA-section .services-contentB{
 		padding: 4px;
 
@@ -117,6 +127,11 @@
 	.sec-title h2 {
 		font-size: 50px;
 		letter-spacing: 0px;
+	}
+
+	.sec-title h1 {
+		font-size: 50px;
+		letter-spacing: 2px;
 	}
 	.main-header.header-style-three .header-upper .logo-box .logo {
 	    margin-left: 15px;
@@ -246,6 +261,14 @@
 	.banner-section.style-four .banner-carousel .content-box h2,
 	.banner-carousel .content-box h2 {
 		font-size: 40px;
+	}
+
+	.banner-section.style-two .banner-carousel .content-box h1,
+	.banner-section.style-three .banner-carousel .content-box h1,
+	.banner-section.style-four .banner-carousel .content-box h1,
+	.banner-carousel .content-box h1 {
+		font-size: 60px;
+		letter-spacing: 2px;
 	}
 	.btn-style-two .btn-title,
 	.btn-style-one .btn-title {

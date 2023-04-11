@@ -87,6 +87,17 @@ def articulo14():
 def articulo15():
     return render_template( 'articulo15.html')
 
+@app.route('/articulo16')
+def articulo16():
+    return render_template( 'articulo16.html')
+
+@app.route('/articulo17')
+def articulo17():
+    return render_template( 'articulo17.html')
+
+@app.route('/articulo18')
+def articulo18():
+    return render_template( 'articulo18.html')
 
 if __name__ == '__main__':
     app.run()

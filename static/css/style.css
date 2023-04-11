@@ -2383,7 +2383,7 @@ img {
 	transition-delay: 700ms;
 }
 
-.banner-carousel .content-box h2 {
+.banner-carousel .content-box h1 {
 	display: block;
 	font-size: 180px;
 	line-height: 1.15em;
@@ -2400,11 +2400,11 @@ img {
 	text-transform: capitalize;
 }
 
-.banner-carousel .content-box h2 span {
+.banner-carousel .content-box h1 span {
 	font-weight: 300;
 }
 
-.banner-carousel .active .content-box h2 {
+.banner-carousel .active .content-box h1 {
 	opacity: 1;
 	-webkit-transform: translateY(0);
 	-ms-transform: translateY(0);
@@ -2610,7 +2610,7 @@ img {
 	text-align: center;
 }
 
-.banner-section.style-two .banner-carousel .content-box h2 {
+.banner-section.style-two .banner-carousel .content-box h1 {
 	font-size: 120px;
 	letter-spacing: -5px;
 	line-height: 1.1em;
@@ -2634,7 +2634,7 @@ img {
 	margin: 0 auto;
 }
 
-.banner-section.style-three .banner-carousel .content-box h2 {
+.banner-section.style-three .banner-carousel .content-box h1 {
 	font-size: 120px;
 	letter-spacing: -5px;
 	line-height: 1.1em;
@@ -2665,7 +2665,7 @@ img {
 	transform: scale(1);
 }
 
-.banner-section.style-four .banner-carousel .content-box h2 {
+.banner-section.style-four .banner-carousel .content-box h1 {
 	font-size: 120px;
 	letter-spacing: -5px;
 	line-height: 1.1em;
@@ -2752,6 +2752,15 @@ img {
 	letter-spacing: -3px;
 }
 
+.sec-title h1 {
+	position: relative;
+	display: block;
+	font-size: 80px;
+	line-height: 1.1em;
+	font-weight: 700;
+	text-transform: capitalize;
+	letter-spacing: -3px;
+}
 .sec-title .text {
 	position: relative;
 	display: block;
@@ -2771,6 +2780,10 @@ img {
 	color: #fff;
 }
 
+
+.sec-title.light h1 {
+	color: #fff;
+}
 .sec-title.text-right .sub-title:before {
 	left: auto;
 	right: 0;
@@ -4248,7 +4261,7 @@ img.lazy-image.loaded {
 	top: 50%;
 	width: 100%;
 	height: 2px;
-	background: url(../images/shape/shape-4.png) center no-repeat;
+
 }
 
 .contact-section .contact-info .border-box .border_middile {
@@ -4258,7 +4271,7 @@ img.lazy-image.loaded {
 	left: 50%;
 	width: 2px;
 	height: 100%;
-	background: url(../images/shape/shape-3.png) center no-repeat;
+
 }
 
 /* News Section */
@@ -8066,44 +8079,8 @@ img.lazy-image.loaded {
 	position: relative;
 }
 
-/* Twitter Widget */
 
-.twitter-widget .post {
-	position: relative;
-	padding-left: 30px;
-	border-bottom: 1px solid #ebebeb;
-	padding-bottom: 20px;
-	margin-bottom: 25px;
-}
 
-.twitter-widget .icon {
-	position: absolute;
-	left: 0;
-	top: 0;
-	font-size: 20px;
-	color: #32beff;
-	font-size: 14px;
-}
-
-.twitter-widget .text {
-	margin-bottom: 10px;
-}
-
-.twitter-widget .post:last-child {
-	border-bottom: 0px;
-	padding-bottom: 0px;
-	margin-bottom: 0;
-}
-
-.twitter-widget .post .date {
-	font-size: 16px;
-	text-transform: uppercase;
-	font-weight: 700;
-}
-
-.twitter-widget .text a {
-	color: #282828;
-}
 
 /* Pagination */
 
