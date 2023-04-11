@@ -103,5 +103,9 @@ def articulo18():
 def articulo19():
     return render_template( 'articulo19.html')
 
+@app.route('/articulo20')
+def articulo20():
+    return render_template( 'articulo20.html')
+
 if __name__ == '__main__':
     app.run()
